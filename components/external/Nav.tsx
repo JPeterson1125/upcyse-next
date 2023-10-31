@@ -97,7 +97,7 @@ export default function Nav() {
                 <button
                   onClick={() =>
                     signIn("google", {
-                      callbackUrl: "http://localhost:3000/dashboard",
+                      callbackUrl: "https://upcyse.vercel.app/dashboard",
                     })
                   }
                   className="text-green-600"
