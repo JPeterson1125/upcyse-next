@@ -185,7 +185,7 @@ export default function ContactForm() {
         </form>
       </div>
       <div className="p-12 relative left-20">
-        <div className="flex flex-col justify-center items-center h-full text-white text-2xl text-center">
+        <div className="flex flex-col justify-center items-center h-full text-black text-2xl text-center dark:invert">
           <h1 className="p-6">We Would Love to Hear From You!</h1>
           <h2>
             Do you have any questions? Please do not hesitate to contact us
