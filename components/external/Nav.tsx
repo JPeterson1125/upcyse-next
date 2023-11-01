@@ -35,7 +35,7 @@ export default function Nav() {
   return (
     <div className="flex justify-center bg-background">
       <div className="flex px-4">
-        <NavigationMenu className="absolute left-4 top-4">
+        <NavigationMenu className="absolute left-4 top-4 md:left-5 md:top-5">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Menu</NavigationMenuTrigger>
@@ -97,7 +97,7 @@ export default function Nav() {
                 <button
                   onClick={() =>
                     signIn("google", {
-                      callbackUrl: "https://upcyse.vercel.app/dashboard",
+                      callbackUrl: "https://www.upcyse.com/dashboard",
                     })
                   }
                   className="text-green-600"
@@ -108,7 +108,7 @@ export default function Nav() {
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>
-        <div className="">
+        <div className="hidden md:block">
           <Image
             src={"/images/designs/logo-black.png"}
             alt="Logo"
@@ -117,7 +117,7 @@ export default function Nav() {
             className="dark:invert w-48 p-6 md:hidden sm:hidden lg:block"
           />
         </div>
-        <div className="absolute right-4 top-4">
+        <div className="absolute right-4 top-4 md:right-5 md:top-5">
           <ModeToggle />
         </div>
       </div>

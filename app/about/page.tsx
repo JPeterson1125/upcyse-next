@@ -10,7 +10,7 @@ export default function About() {
       <div className="sticky top-0 z-10 bg-white dark:bg-black">
         <Nav />
       </div>
-      <div className="flex lg:flex-row md:flex-col items-center p-20 md:mb-10">
+      <div className="flex flex-col md:flex-row items-center p-4 md:p-20 md:mb-10 mt-20 md:mt-0">
         <Image
           src={"/images/designs/upcyse-wave.png"}
           alt="cover-image"
@@ -18,9 +18,9 @@ export default function About() {
           height={100}
           className=""
         />
-        <div className="p-20">
-          <h1 className="text-6xl font-bold py-4">Our Mission</h1>
-          <p className="text-2xl">
+        <div className="p-4 md:p-20">
+          <h1 className="text-4xl md:text-6xl font-bold py-4">Our Mission</h1>
+          <p className="text-xl md:text-2xl">
             At Upcyse, we're your trusted partner in vacation rental management.
             With our proven strategies and expert team, we help you maximize
             your short-term rental's potential, boost your bookings, and
@@ -30,7 +30,7 @@ export default function About() {
             <Link href="/contact">
               <Button
                 variant={"outline"}
-                className="text-lg p-6 hover:bg-accent"
+                className="text-lg p-6 hover:bg-accent w-full"
               >
                 Get Started With Us
               </Button>
@@ -38,10 +38,12 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row md:flex-col items-center p-20 md:mb-10 ">
-        <div className="px-10 border border-accent">
-          <h1 className="text-6xl font-bold py-12 px-10">Our Services</h1>
-          <div className="grid grid-cols-2 gap-10 p-10">
+      <div className="flex flex-col lg:flex-row items-center p-8 lg:p-20 lg:mb-10">
+        <div className="px-4 lg:px-10 border border-accent">
+          <h1 className="text-4xl lg:text-6xl font-bold py-4 lg:py-12 px-4 lg:px-10">
+            Our Services
+          </h1>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-10 p-4 lg:p-10 lg:mb-10">
             <div>
               <strong className="text-2xl">
                 Virtual management of your property:{" "}
@@ -85,10 +87,12 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className="flex lg:flex-row md:flex-col items-center p-20 md:mb-10">
-        <div className="px-20">
-          <h1 className="text-6xl font-bold py-4">About the Team</h1>
-          <p className="text-2xl">
+      <div className="flex flex-col md:flex-row items-center p-4 md:p-20 md:mb-10">
+        <div className="p-4 md:p-20">
+          <h1 className="text-4xl md:text-6xl font-bold py-4">
+            About the Team
+          </h1>
+          <p className="text-xl md:text-2xl">
             Our team is comprised of an in-house professional photographer, SEO
             specialist, and a software developer. We are passionate about
             helping our clients succeed in the short-term rental market.
@@ -102,32 +106,6 @@ export default function About() {
           className=""
         />
       </div>
-      {/* <div className="flex lg:flex-row md:flex-col items-center p-20">
-        <Image
-          src={"/images/designs/upcyse-x.png"}
-          alt="cover-image"
-          width={1000}
-          height={100}
-          className=""
-        />
-        <div className="flex flex-col items-center">
-          <p className="p-20 text-xl">
-            We provide support by helping establish infrastructure to streamline
-            your on-site operations, all while offering a fair, transparent
-            commission structure with no hidden fees. Let's work together to
-            make your short-term rental journey smoother, more profitable, and
-            hassle-free. Discover a partner you can trust with Upcyse.
-          </p>
-          <Link href="/contact">
-            <Button
-              variant={"outline"}
-              className="text-lg px-8 py-6 mb-6 hover:bg-green-500"
-            >
-              Get Started With Us
-            </Button>
-          </Link>
-        </div>
-      </div> */}
       <div className="mt-10">
         <Footer />
       </div>

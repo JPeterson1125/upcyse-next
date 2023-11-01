@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Title() {
   return (
-    <div className="relative h-screen flex flex-col justify-center items-center">
+    <div className="relative h-screen flex flex-col justify-center items-center p-10">
       <div className="absolute inset-0 z-[-1] bg-black">
         <Image
           src={"/images/samples/sample7.jpg"}

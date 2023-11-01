@@ -4,8 +4,8 @@ import Image from "next/image";
 export default function Promo() {
   return (
     <div className="">
-      <div className="flex flex-row p-12 items-center justify-center mt-12">
-        <div className="flex flex-col items-center p-12">
+      <div className="flex flex-col md:flex-row p-12 items-center justify-center mt-12">
+        <div className="flex flex-col items-center text-center p-12">
           <FaHandHoldingUsd className="text-9xl text-black hover:text-green-600 dark:invert" />
           <h3 className="font-bold py-6">Strategic Marketing</h3>
           <p>
@@ -15,7 +15,7 @@ export default function Promo() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center p-12">
+        <div className="flex flex-col items-center text-center p-12">
           <FaCameraRetro className="text-9xl text-black hover:text-green-600 dark:invert" />
           <h3 className="font-bold py-6">World-Class Photography</h3>
           <p>
@@ -25,7 +25,7 @@ export default function Promo() {
           </p>
         </div>
 
-        <div className="flex flex-col items-center p-12">
+        <div className="flex flex-col items-center text-center p-12">
           <FaChartLine className="text-9xl text-black hover:text-green-600 dark:invert" />
           <h3 className="font-bold py-6">Consistent Engagement</h3>
           <p>
@@ -35,40 +35,40 @@ export default function Promo() {
         </div>
       </div>
       <div className="flex flex-wrap justify-center gap-10">
-        <div className="flex w-full md:w-1/2 lg:w-1/6 p-2 items-center justify-center">
+        <div className="flex w-1/2 md:w-1/3 lg:w-1/6 p-2 items-center justify-center">
           <Image
             className="w-full h-auto"
             src={"/images/designs/airbnb.png"}
             alt="airbnb-logo"
-            width={200}
-            height={267}
+            width={150}
+            height={200}
           />
         </div>
-        <div className="flex w-full md:w-1/2 lg:w-1/6 p-2 items-center justify-center">
+        <div className="flex w-1/2 md:w-1/3 lg:w-1/6 p-2 items-center justify-center">
           <Image
             className="w-full h-auto"
             src={"/images/designs/vrbo.png"}
             alt="vrbo-logo"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
-        <div className="flex w-full md:w-1/2 lg:w-1/6 p-2 items-center justify-center">
+        <div className="flex w-1/2 md:w-1/3 lg:w-1/6 p-2 items-center justify-center">
           <Image
             className="w-full h-auto"
             src={"/images/designs/expedia.png"}
             alt="expedia-logo"
-            width={200}
+            width={150}
             height={1}
           />
         </div>
-        <div className="flex w-full md:w-1/2 lg:w-1/6 p-2 items-center justify-center">
+        <div className="flex w-1/2 md:w-1/3 lg:w-1/6 p-2 items-center justify-center">
           <Image
             className="w-full h-auto"
             src={"/images/designs/google.png"}
             alt="google-logo"
-            width={200}
-            height={200}
+            width={150}
+            height={150}
           />
         </div>
       </div>

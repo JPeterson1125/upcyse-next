@@ -8,10 +8,10 @@ import {
 export default function Faq() {
   return (
     <div id="faq" className="p-12">
-      <h1 className="mt-10 pl-20 font-bold text-2xl">
+      <h1 className="mt-10 font-bold text-4xl text-center md:text-left">
         Frequently Asked Questions
       </h1>
-      <Accordion type="single" collapsible className="w-full px-20 py-6">
+      <Accordion type="single" collapsible className="w-full py-6">
         <AccordionItem value="item-1">
           <AccordionTrigger>What Are Your Fees?</AccordionTrigger>
           <AccordionContent>
@@ -32,7 +32,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-2">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-left">
             What Makes Upcyse Stand Out from Competitors?
           </AccordionTrigger>
           <AccordionContent>
@@ -114,7 +114,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-5">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-left">
             How Do I Know If My Property Is a Good Fit For Upcyse?
           </AccordionTrigger>
           <AccordionContent>

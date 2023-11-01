@@ -51,7 +51,7 @@ export default function DashboardPage() {
           <Button
             onClick={() =>
               signIn("google", {
-                callbackUrl: "http://localhost:3000/dashboard",
+                callbackUrl: "https://www.upcyse.com/dashboard",
               })
             }
           >
