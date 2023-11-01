@@ -34,7 +34,7 @@ const components: { title: string; href: string; description: string }[] = [
 export default function Nav() {
   return (
     <div className="flex justify-center bg-background">
-      <div className="flex px-4 max-w-full md:max-w-screen-md mx-auto">
+      <div className="flex px-4 max-w-full md:max-w-screen-md mx-auto flex-wrap">
         <NavigationMenu className="absolute left-4 top-4 md:left-5 md:top-5">
           <NavigationMenuList>
             <NavigationMenuItem>
