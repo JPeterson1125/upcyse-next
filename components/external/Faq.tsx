@@ -13,7 +13,9 @@ export default function Faq() {
       </h1>
       <Accordion type="single" collapsible className="w-full py-6">
         <AccordionItem value="item-1">
-          <AccordionTrigger>What Are Your Fees?</AccordionTrigger>
+          <AccordionTrigger className="text-left">
+            What Are Your Fees?
+          </AccordionTrigger>
           <AccordionContent>
             <p className="p-2">
               ▪️ We have a truly one-of-a-kind business model that minimizes the
@@ -70,7 +72,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-3">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-left">
             How Will You Promote My Property To Travelers?
           </AccordionTrigger>
           <AccordionContent>
@@ -98,7 +100,7 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-4">
-          <AccordionTrigger>
+          <AccordionTrigger className="text-left">
             How Do You Handle On-Site Home Services?
           </AccordionTrigger>
           <AccordionContent>
@@ -131,7 +133,9 @@ export default function Faq() {
           </AccordionContent>
         </AccordionItem>
         <AccordionItem value="item-6">
-          <AccordionTrigger>How Do I Get Started?</AccordionTrigger>
+          <AccordionTrigger className="text-left">
+            How Do I Get Started?
+          </AccordionTrigger>
           <AccordionContent>
             <p className="p-2">
               ▪️ To begin your journey with Upcyse, we invite you to click any

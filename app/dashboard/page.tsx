@@ -38,7 +38,7 @@ export default function DashboardPage() {
 
   if (status === "unauthenticated") {
     return (
-      <div className="flex flex-col items-center justify-center h-screen space-y-4">
+      <div className="flex flex-col items-center justify-center md:flex-row md:items-start md:justify-start">
         <Image
           src={"/images/designs/green-logo.png"}
           alt="cover-image"
@@ -63,7 +63,7 @@ export default function DashboardPage() {
   }
   return (
     <>
-      <div className="hidden flex-col md:flex">
+      <div className="flex-col md:flex">
         <div className="border-b">
           <div className="flex h-16 items-center px-4">
             <Image
@@ -73,8 +73,8 @@ export default function DashboardPage() {
               height={32}
               className="mx-4 dark:invert"
             />
-            <MainNav className="mx-6" />
-            <div className="ml-auto flex items-center space-x-4">
+            <MainNav className="mx-2" />
+            <div className="sm:ml-auto mr-8 sm:mr-0 flex items-center space-x-2">
               <TeamSwitcher />
               <UserNav />
             </div>
@@ -82,7 +82,9 @@ export default function DashboardPage() {
         </div>
         <div className="flex-1 space-y-4 p-8 pt-6">
           <div className="flex items-center justify-between space-y-2">
-            <h2 className="text-3xl font-bold tracking-tight">Dashboard</h2>
+            <h2 className="text-3xl font-bold tracking-tight hidden sm:block">
+              Dashboard
+            </h2>
             <div className="flex items-center space-x-2">
               <CalendarDateRangePicker />
               <Button>Download</Button>
@@ -208,7 +210,7 @@ export default function DashboardPage() {
                 </Card>
               </div>
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
-                <Card className="col-span-4">
+                <Card className="col-span-3 sm:col-span-4 max-w-full overflow-auto">
                   <CardHeader>
                     <CardTitle>Overview</CardTitle>
                   </CardHeader>

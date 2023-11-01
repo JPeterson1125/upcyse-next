@@ -34,7 +34,7 @@ const components: { title: string; href: string; description: string }[] = [
 export default function Nav() {
   return (
     <div className="flex justify-center bg-background">
-      <div className="flex px-4">
+      <div className="flex px-4 max-w-full md:max-w-screen-md mx-auto">
         <NavigationMenu className="absolute left-4 top-4 md:left-5 md:top-5">
           <NavigationMenuList>
             <NavigationMenuItem>
@@ -117,7 +117,7 @@ export default function Nav() {
             className="dark:invert w-48 p-6 md:hidden sm:hidden lg:block"
           />
         </div>
-        <div className="absolute right-4 top-4 md:right-5 md:top-5">
+        <div className="absolute right-4 top-4 md:right-5 md:top-5 hidden md:block">
           <ModeToggle />
         </div>
       </div>

@@ -22,7 +22,7 @@ export default function ContactForm() {
   }
 
   return (
-    <div className="flex items-center sm:p-4 md:p-10 lg:p-32">
+    <div className="flex flex-col-reverse md:flex-row items-center p-4 md:p-10 lg:p-32">
       <Image
         src={"/images/designs/green-logo.png"}
         alt="cover-image"
@@ -30,7 +30,7 @@ export default function ContactForm() {
         objectFit="contain"
         className="opacity-10 p-20 z-[-1]"
       />
-      <div className="w-full">
+      <div className="w-full md:w-1/2">
         <form onSubmit={handleSubmit}>
           <fieldset>
             <div className="py-2 flex flex-col text-xl">
@@ -82,17 +82,21 @@ export default function ContactForm() {
                 className="text-lg rounded-lg p-2"
               />
             </div>
-            <fieldset className="locale text-xl pb-2">
-              <legend>Location</legend>
-              <div className="flex gap-2">
+            <div className="py-2 text-xl gap-2">
+              <fieldset>
+                <legend>Location</legend>
                 <input
                   type="text"
                   name="city"
                   placeholder="City"
                   required
-                  className="rounded-lg p-2"
+                  className="rounded-lg p-2 my-2 w-full text-lg"
                 />
-                <select name="state" required className="rounded-lg p-2">
+                <select
+                  name="state"
+                  required
+                  className="rounded-lg p-2 my-2 w-full text-lg"
+                >
                   <option value="" disabled>
                     State
                   </option>
@@ -151,12 +155,12 @@ export default function ContactForm() {
                 <input
                   type="text"
                   name="postal-code"
-                  placeholder="12345"
+                  placeholder="Postal Code"
                   required
-                  className="rounded-lg p-2"
+                  className="rounded-lg p-2 my-2 w-full text-lg"
                 />
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
             <label className="text-xl" htmlFor="message">
               Message
             </label>
@@ -179,12 +183,16 @@ export default function ContactForm() {
               value="Registration Form Submission"
             />
           </fieldset>
-          <Button className="my-2" type="submit" disabled={state.submitting}>
+          <Button
+            className="my-2 w-full"
+            type="submit"
+            disabled={state.submitting}
+          >
             Submit
           </Button>
         </form>
       </div>
-      <div className="p-12 relative left-20">
+      <div className="p-12 relative left-0 md:left-20 w-full md:w-1/2 md:ml-auto">
         <div className="flex flex-col justify-center items-center h-full text-black text-2xl text-center dark:invert">
           <h1 className="p-6">We Would Love to Hear From You!</h1>
           <h2>
